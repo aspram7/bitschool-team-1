@@ -1,14 +1,15 @@
 import React from "react";
 
 import Layout from "./components/Layout/Layout";
-import Auth from "./containers/Auth/Auth";
+import Header from "./containers/Header/Header";
+
+import "./styles/all.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Layout>
-        <Auth />
-      </Layout>
+    <div className="app-wrapper">
+      <Header />
+      <Layout></Layout>
     </div>
   );
 }
