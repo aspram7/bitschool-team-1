@@ -1,17 +1,7 @@
-import React from "react";
-
-import Layout from "./components/Layout/Layout";
-import Header from "./containers/Header/Header";
-
-import "./styles/all.scss";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="app-wrapper">
-      <Header />
-      <Layout></Layout>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
