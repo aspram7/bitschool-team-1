@@ -7,11 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Layout>
-        {/* for example next 2 lines */}
-        <Button name="Click me" />
-        <i class="icon-gift"></i>
-      </Layout>
+      <Layout></Layout>
     </div>
   );
 }
