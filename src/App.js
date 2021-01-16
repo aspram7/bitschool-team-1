@@ -1,12 +1,14 @@
 import React from "react";
-import Layout from "./components/Layout/Layout";
 
-import "./App.css";
+import Layout from "./components/Layout/Layout";
+import Auth from "./containers/Auth/Auth";
 
 function App() {
   return (
     <div className="App">
-      <Layout></Layout>
+      <Layout>
+        <Auth />
+      </Layout>
     </div>
   );
 }
