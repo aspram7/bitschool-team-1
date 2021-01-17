@@ -58,7 +58,7 @@ class Header extends Component {
   render() {
     console.log(this.state.isOpenNavigation)
     return (
-      <header className={`header-main ${this.state.isOpenNavigation ? "is-open-navigation" : ""} ${this.state.isSticky ? "is-sticky" : ""} ${ this.state.isHeaderHeight ? "is-min-height" : ""}`}>
+      <header className={`header-main${this.state.isOpenNavigation ? " is-open-navigation" : ""}${this.state.isSticky ? " is-sticky" : ""}${ this.state.isHeaderHeight ? " is-min-height" : ""}`}>
         <div className="container">
           <div className="header-main-content">
             {!this.state.isSticky && (
