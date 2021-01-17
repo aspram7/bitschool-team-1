@@ -1,22 +1,13 @@
 import React from "react";
 
 import Welcome from "./Welcome/Welcome";
+import WhatWeDo from "./WhatWeDo/WhatWeDo";
 
 const Sections = () => {
     return(
         <>
         <Welcome />
-        <div>
-            a<br/>
-            a<br/>
-            a<br/>
-            a<br/>
-            a<br/>
-            a<br/>
-            a<br/>
-            a<br/>
-            a<br/>
-        </div>
+        <WhatWeDo />
         </>
     );
 }
