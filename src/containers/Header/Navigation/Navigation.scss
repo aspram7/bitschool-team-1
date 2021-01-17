@@ -1,0 +1,129 @@
+.is-sticky {
+  .main-navigation {
+    .nav-item {
+      .nav-item-link {
+        color: #444;
+      }
+
+      &.btn-registr {
+        .btn-nav-item {
+          color: #444;
+        }
+      }
+    }
+  }
+}
+
+.main-navigation {
+  display: none;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+
+  &.is-open {
+    display: block;
+    height: auto;
+  }
+
+  .nav-item {
+    border-top: 1px solid #eee;
+
+    &:first-child {
+      border-top: 0;
+    }
+    .nav-item-link {
+      padding: 14px 5px;
+      width: 100%;
+      font-family: "Quicksand-Medium";
+      font-weight: 700;
+      text-transform: none;
+      font-size: 13px;
+      line-height: 22px;
+      color: #fff;
+      letter-spacing: 1px;
+      display: block;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    &.btn-registr {
+      background: transparent;
+
+      .btn-nav-item {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 22px;
+        font-family: "Quicksand-Medium";
+        background: transparent;
+        padding: 14px 5px;
+        text-align: left;
+
+        &:hover {
+          transform: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 992px) {
+  .is-sticky {
+    .main-navigation {
+      .nav-item {
+        .nav-item-link {
+          color: #444;
+        }
+
+        &.btn-registr {
+          .btn-nav-item {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .main-navigation {
+    width: auto;
+    height: auto;
+    display: block;
+    .main-navigation-menu {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    .nav-item {
+      margin-left: 2px;
+      border: 0;
+      .nav-item-link {
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      &.btn-registr {
+        height: 100%;
+        margin-left: 10px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background: #f0a540;
+
+        .btn-nav-item {
+          height: 100%;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
