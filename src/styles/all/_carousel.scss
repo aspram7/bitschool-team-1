@@ -1,12 +1,19 @@
-.carousel {
-  .slide {
-    background: transparent;
-  }
+.app-wrapper {
+  .carousel {
+    .slide {
+      background: transparent ;
+    }
 
-  .control-dots {
-    .dot {
+    .control-dots {
+      .dot {
         background: #f0a540;
         box-shadow: none;
+
+        &:focus{
+          box-shadow: none;
+          outline: none;
+        }
+      }
     }
   }
 }
