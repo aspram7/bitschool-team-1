@@ -13,6 +13,7 @@ const Modal = ({ children, onClose }) => {
     modalRoot.classList.add("modal");
     modalRoot.appendChild(el);
     el.classList.add("modal-child");
+    document.body.style.overflow = "hidden";
 
     const f = (e) => {
       if (!el.contains(e.target)) {
@@ -20,11 +21,12 @@ const Modal = ({ children, onClose }) => {
       }
     };
 
-    window.addEventListener("click", f);
+    window.addEventListener("click", f, true);
 
     return () => {
       body.removeChild(modalRoot);
-      window.removeEventListener("click", f);
+      window.removeEventListener("click", f, true);
+      document.body.style.overflow = "unset";
     };
   }, [modalRoot, el]);
 

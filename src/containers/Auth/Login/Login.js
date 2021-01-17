@@ -48,11 +48,11 @@ const Login = (props) => {
   };
 
   const onRedirect = () => {
-    props.onRedirect("signup");
+    props.onRedirect("register");
   };
 
   return (
-    <div className="login-component">
+    <div className="login-reg-component">
       <h1>Login Form</h1>
       <Input
         labelName="Email"
@@ -83,10 +83,10 @@ const Login = (props) => {
       <Button onClick={onClickButton} style={{ marginTop: "10px" }}>
         LOGIN
       </Button>
-      <div className="signup">
+      <div className="login-reg">
         Don't have an account?
         <span className="blue-link" onClick={onRedirect}>
-          Signup Now
+          Register Now
         </span>
       </div>
     </div>
