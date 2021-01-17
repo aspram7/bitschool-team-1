@@ -10,7 +10,6 @@ const Sections = () => {
       <Welcome />
       <WhatWeDo />
       <GetAPet />
-      <div style={{ marginBottom: "800px" }}></div>
     </>
   );
 };
