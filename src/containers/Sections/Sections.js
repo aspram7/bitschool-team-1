@@ -2,6 +2,7 @@ import React from "react";
 
 import Welcome from "./Welcome/Welcome";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
+import JoinUs from "./JoinUs/JoinUs";
 import GetAPet from "./GetAPet/GetAPet";
 
 const Sections = () => {
@@ -9,6 +10,7 @@ const Sections = () => {
     <>
       <Welcome />
       <WhatWeDo />
+      <JoinUs />
       <GetAPet />
     </>
   );
