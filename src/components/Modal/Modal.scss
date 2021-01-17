@@ -1,0 +1,32 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-child {
+    width: 500px;
+    min-height: 200px;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 5px;
+
+    .modal-header {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}

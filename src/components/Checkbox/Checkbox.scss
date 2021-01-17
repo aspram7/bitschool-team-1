@@ -1,0 +1,16 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox > input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.checkbox > label {
+  margin-left: 5px;
+}
