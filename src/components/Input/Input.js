@@ -5,7 +5,15 @@ import "./Input.scss";
 const Input = (props) => {
   return (
     <div className="input-box">
-      <input type={props.type} name={props.name} value={props.value} placeholder={props.placeholder} onChange={props.onChange} />
+      <label htmlFor={props.label}>{props.labelName}</label>
+      <input
+        type={props.type}
+        name={props.name}
+        value={props.value}
+        placeholder={props.placeholder}
+        onChange={props.onChange}
+        id={props.label}
+      />
       <p>{props.errorMessage}</p>
     </div>
   );
