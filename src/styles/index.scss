@@ -1,9 +1,6 @@
-<<<<<<< HEAD:src/index.css
-=======
 @import "../assets/fonts/icons/font-icons.scss";
 @import "../assets/fonts/quicksand/Quicksand.scss";
 @import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
->>>>>>> 85be923c1340523f2f93493ddf365ccca12b662c:src/styles/index.scss
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +9,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "Quicksand-Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

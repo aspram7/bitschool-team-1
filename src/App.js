@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import "./App.css";
-
-function App() {
-  return <div className="App"></div>;
-=======
 import React from "react";
 
 import Layout from "./components/Layout/Layout";
@@ -25,7 +19,6 @@ function App() {
       <Footer />
     </div>
   );
->>>>>>> 85be923c1340523f2f93493ddf365ccca12b662c
 }
 
 export default App;
