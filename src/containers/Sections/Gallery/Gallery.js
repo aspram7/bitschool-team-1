@@ -17,13 +17,21 @@ const Gallery = () => {
         </div>
       </div>
       <div className="gallery-images">
-        {galleryData.map((el) => {
-          return (
-            <div className="gallery-item" key={el.id}>
-              <img src={el.img.url} alt={el.img.alt} />
-            </div>
-          );
-        })}
+        <div className="gallery-images-items">
+          {galleryData.map((el, index) => {
+            return (
+              <div
+                className={`gallery-item ${index === 2 ? "big-img" : ""}`}
+                key={el.id}
+              >
+                <img src={el.img.url} alt={el.img.alt} />
+                <div className="gallery-item-overly">
+                  <i className="icon-line-plus"></i>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
