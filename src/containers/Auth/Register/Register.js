@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import Input from "../../../components/Input/Input";
 import Button from "../../../components/Button/Button";
-import Checkbox from "../../../components/Checkbox/Checkbox";
 
 import { validateEmail, validatePassword } from "../../../utils/validate";
 
@@ -58,46 +57,54 @@ const Register = (props) => {
   return (
     <div className="login-reg-component">
       <h1>Register Form</h1>
-      <Input
-        labelName="Full Name"
-        label="name-form"
-        type="text"
-        name="name"
-        value={inputs.name}
-        placeholder="Enter Your Name..."
-        onChange={onChange}
-      />
-      <Input
-        labelName="Email"
-        label="email-form"
-        type="text"
-        name="email"
-        value={inputs.email}
-        placeholder="Enter Your Email..."
-        errorMessage={errors.email}
-        onChange={onChange}
-      />
-      <Input
-        labelName="Password"
-        label="password-form"
-        type="password"
-        name="password"
-        value={inputs.password}
-        placeholder="Enter Your Password..."
-        errorMessage={errors.password}
-        onChange={onChange}
-      />
-      <Input
-        labelName="Confirm Password"
-        label="confirm-password-form"
-        type="password"
-        name="confirmPassword"
-        value={inputs.confirmPassword}
-        placeholder="Confirm Your Password..."
-        errorMessage={errors.confirmPassword}
-        onChange={onChange}
-      />
-      <Button onClick={onClickButton} style={{ marginTop: "10px" }}>
+      <div className="register-input-form">
+        <Input
+          labelName="Full Name"
+          label="name-form"
+          type="text"
+          name="name"
+          value={inputs.name}
+          placeholder="Enter Your Name..."
+          onChange={onChange}
+        />
+      </div>
+      <div className="register-input-form">
+        <Input
+          labelName="Email"
+          label="email-form"
+          type="text"
+          name="email"
+          value={inputs.email}
+          placeholder="Enter Your Email..."
+          errorMessage={errors.email}
+          onChange={onChange}
+        />
+      </div>
+      <div className="register-input-form">
+        <Input
+          labelName="Password"
+          label="password-form"
+          type="password"
+          name="password"
+          value={inputs.password}
+          placeholder="Enter Your Password..."
+          errorMessage={errors.password}
+          onChange={onChange}
+        />
+      </div>
+      <div className="register-input-form">
+        <Input
+          labelName="Confirm Password"
+          label="confirm-password-form"
+          type="password"
+          name="confirmPassword"
+          value={inputs.confirmPassword}
+          placeholder="Confirm Your Password..."
+          errorMessage={errors.confirmPassword}
+          onChange={onChange}
+        />
+      </div>
+      <Button onClick={onClickButton} className="register-button-form">
         REGISTER
       </Button>
       <div className="login-reg">
