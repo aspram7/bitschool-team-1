@@ -54,33 +54,37 @@ const Login = (props) => {
   return (
     <div className="login-reg-component">
       <h1>Login Form</h1>
-      <Input
-        labelName="Email"
-        label="email-form"
-        type="text"
-        name="email"
-        value={inputs.email}
-        placeholder="Enter Your Email..."
-        errorMessage={errors.email}
-        onChange={onChange}
-      />
-      <Input
-        labelName="Password"
-        label="password-form"
-        type="password"
-        name="password"
-        value={inputs.password}
-        placeholder="Enter Your Password..."
-        errorMessage={errors.password}
-        onChange={onChange}
-      />
+      <div className="login-input-form">
+        <Input
+          labelName="Email"
+          label="email-form"
+          type="text"
+          name="email"
+          value={inputs.email}
+          placeholder="Enter Your Email..."
+          errorMessage={errors.email}
+          onChange={onChange}
+        />
+      </div>
+      <div className="login-input-form">
+        <Input
+          labelName="Password"
+          label="password-form"
+          type="password"
+          name="password"
+          value={inputs.password}
+          placeholder="Enter Your Password..."
+          errorMessage={errors.password}
+          onChange={onChange}
+        />
+      </div>
       <div className="checkbox-and-link">
         <Checkbox checked={checkbox} onChange={onChangeCheckbox} />
         <div className="blue-link" onClick={handleForgotPassword}>
           Forgot Password?
         </div>
       </div>
-      <Button onClick={onClickButton} style={{ marginTop: "10px" }}>
+      <Button onClick={onClickButton} className="login-button-form">
         LOGIN
       </Button>
       <div className="login-reg">
