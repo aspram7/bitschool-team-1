@@ -1,3 +1,9 @@
+<<<<<<< HEAD:src/index.css
+=======
+@import "../assets/fonts/icons/font-icons.scss";
+@import "../assets/fonts/quicksand/Quicksand.scss";
+@import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+>>>>>>> 85be923c1340523f2f93493ddf365ccca12b662c:src/styles/index.scss
 * {
   margin: 0;
   padding: 0;

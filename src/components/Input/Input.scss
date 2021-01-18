@@ -1,0 +1,24 @@
+.input-box {
+  font-family: "Quicksand-Regular";
+  position: relative;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    font-size: 13px;
+    border: 1px solid grey;
+    outline: none;
+    padding: 8px 10px;
+    font-family: "Quicksand-Regular";
+    width: 100%;
+  }
+
+  p {
+    color: rgb(211, 6, 6);
+    font-size: 11px;
+    position: absolute;
+  }
+}
