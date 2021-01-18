@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 
 import Button from "../../../components/Button/Button";
 import SliderBox from "../../../components/Box/SliderBox/SliderBox";
@@ -35,8 +34,7 @@ class JoinUs extends Component {
               <div className="joinus-info">
                 <h2 className="joinus-info-title">Join to Happy Customers</h2>
                 <p className="joinus-info-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptates deserunt facere placeat est animi, sunt?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates deserunt facere placeat est animi, sunt?
                 </p>
                 <Button className={"btn-joinus-custmer"}>Join Us Now</Button>
               </div>
@@ -56,23 +54,14 @@ class JoinUs extends Component {
               </div>
             </div>
             <div className="joinus-content-item">
-              <Carousel showArrows={false} showStatus={false} autoPlay={true} swipeable={true} infiniteLoop={true}>
-                {this.state.output.map((elemet) => {
+              <Carousel showArrows={false} showThumbs={false} showStatus={false} autoPlay={true} swipeable={true} infiniteLoop={true}>
+                {this.state.output.map((elemet, index) => {
                   return (
-                    <>
-                      <div className="joinus-slider-item">
-                        {elemet.map((el) => {
-                          return (
-                            <SliderBox
-                              key={el.id}
-                              img={el.img}
-                              title={el.title}
-                              description={el.description}
-                            />
-                          );
-                        })}
-                      </div>
-                    </>
+                    <div className="joinus-slider-item" key={index}>
+                      {elemet.map((el) => {
+                        return <SliderBox key={el.id} img={el.img} title={el.title} description={el.description} />;
+                      })}
+                    </div>
                   );
                 })}
               </Carousel>
