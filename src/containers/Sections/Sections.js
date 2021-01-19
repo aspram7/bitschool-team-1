@@ -5,6 +5,7 @@ import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import JoinUs from "./JoinUs/JoinUs";
 import Gallery from "./Gallery/Gallery";
 import GetAPet from "./GetAPet/GetAPet";
+import NeedHelp from "./NeedHelp/NeedHelp";
 
 const Sections = () => {
   return (
@@ -14,6 +15,7 @@ const Sections = () => {
       <JoinUs />
       <Gallery />
       <GetAPet />
+      <NeedHelp />
     </>
   );
 };

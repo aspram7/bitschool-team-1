@@ -4,6 +4,7 @@ import Layout from "./components/Layout/Layout";
 import Header from "./containers/Header/Header";
 import Sections from "./containers/Sections/Sections";
 import Footer from "./containers/Footer/Footer";
+import GoToTop from "./containers/GoToTop/GoToTop";
 
 import "./styles/all.scss";
 
@@ -15,6 +16,7 @@ function App() {
         <Sections />
       </Layout>
       <Footer />
+      <GoToTop/>
     </div>
   );
 }
