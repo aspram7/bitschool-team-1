@@ -8,6 +8,7 @@
       display: flex;
       justify-content: space-between;
       padding: 80px 0;
+      flex-wrap: wrap;
 
       .about-us,
       .blogroll,
@@ -20,8 +21,7 @@
 
         .about-us-content {
           .contacts {
-            background: url(../../../assets/img/world-map.png) no-repeat center
-              center;
+            background: url(../../../assets/img/world-map.png) no-repeat center center;
             background-size: 100%;
 
             address {
@@ -94,6 +94,36 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 992px) {
+  .footer-top {
+    .footer-top-content {
+      .about-us,
+      .blogroll,
+      .blogroll-new,
+      .sales {
+        flex: 0 0 50%;
+        width: 50% !important;
+        padding-bottom: 50px !important;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .footer-top {
+    .footer-top-content {
+      display: block !important;
+
+      .about-us,
+      .blogroll,
+      .blogroll-new,
+      .sales {
+        width: 100% !important;
       }
     }
   }
