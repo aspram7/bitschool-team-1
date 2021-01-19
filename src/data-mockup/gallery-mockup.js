@@ -119,5 +119,5 @@ export const galleryData = [
       url: img15,
       alt: "15.jpg",
     },
-  }
+  },
 ];

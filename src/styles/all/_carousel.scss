@@ -1,7 +1,7 @@
 .app-wrapper {
   .carousel {
     .slide {
-      background: transparent ;
+      background: transparent;
     }
 
     .control-dots {
@@ -9,7 +9,7 @@
         background: #f0a540;
         box-shadow: none;
 
-        &:focus{
+        &:focus {
           box-shadow: none;
           outline: none;
         }

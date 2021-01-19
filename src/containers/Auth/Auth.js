@@ -12,7 +12,15 @@ const Auth = () => {
     setActivePage(page);
   };
 
-  return <div className="auth">{activePage === "register" ? <Register onRedirect={onRedirect} /> : <Login onRedirect={onRedirect} />}</div>;
+  return (
+    <div className="auth">
+      {activePage === "register" ? (
+        <Register onRedirect={onRedirect} />
+      ) : (
+        <Login onRedirect={onRedirect} />
+      )}
+    </div>
+  );
 };
 
 export default Auth;

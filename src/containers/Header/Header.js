@@ -53,8 +53,6 @@ class Header extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
 
-
-
   render() {
     return (
       <header className={`header-main${this.state.isOpenNavigation ? " is-open-navigation" : ""}${this.state.isSticky ? " is-sticky" : ""}${ this.state.isHeaderHeight ? " is-min-height" : ""}`}>
