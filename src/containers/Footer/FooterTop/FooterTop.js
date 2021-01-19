@@ -53,7 +53,9 @@ const FooterTop = () => {
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/forum/requests-and-feedback/">Feedback</Link>
+                  <Link href="https://wordpress.org/support/forum/requests-and-feedback/">
+                    Feedback
+                  </Link>
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
@@ -61,7 +63,9 @@ const FooterTop = () => {
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/">Support Forums</Link>
+                  <Link href="https://wordpress.org/support/">
+                    Support Forums
+                  </Link>
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
@@ -73,7 +77,9 @@ const FooterTop = () => {
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
-                  <Link href="https://planet.wordpress.org/">Canvas Planet</Link>
+                  <Link href="https://planet.wordpress.org/">
+                    Canvas Planet
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -88,7 +94,9 @@ const FooterTop = () => {
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/forum/requests-and-feedback/">Feedback</Link>
+                  <Link href="https://wordpress.org/support/forum/requests-and-feedback/">
+                    Feedback
+                  </Link>
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
@@ -96,7 +104,9 @@ const FooterTop = () => {
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/">Support Forums</Link>
+                  <Link href="https://wordpress.org/support/">
+                    Support Forums
+                  </Link>
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
@@ -108,7 +118,9 @@ const FooterTop = () => {
                 </li>
                 <li>
                   <i className="icon-angle-right"></i>
-                  <Link href="https://planet.wordpress.org/">Canvas Planet</Link>
+                  <Link href="https://planet.wordpress.org/">
+                    Canvas Planet
+                  </Link>
                 </li>
               </ul>
             </div>

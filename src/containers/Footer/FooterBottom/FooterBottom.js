@@ -9,7 +9,9 @@ const FooterBottom = () => {
     <div className="footer-bottom">
       <div className="container">
         <div className="footer-bottom-content">
-          <div className="reserver-by">Copyrights © 2020 All Rights Reserved by Canvas Inc.</div>
+          <div className="reserver-by">
+            Copyrights © 2020 All Rights Reserved by Canvas Inc.
+          </div>
           <div className="our-online-pages">
             <Link href="#" className="social-icon si-facebook">
               <i className="icon-facebook"></i>

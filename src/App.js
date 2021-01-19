@@ -8,8 +8,6 @@ import Footer from "./containers/Footer/Footer";
 import "./styles/all.scss";
 
 function App() {
-  // const [show, setShow] = useState(false);
-
   return (
     <div className="app-wrapper">
       <Header />

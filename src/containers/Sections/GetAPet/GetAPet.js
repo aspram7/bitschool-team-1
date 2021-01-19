@@ -1,8 +1,7 @@
 import React from "react";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 
 import Button from "../../../components/Button/Button";
-
 import image from "../../../assets/img/get-a-pet/section-bg.jpg";
 
 import "./GetAPet.scss";

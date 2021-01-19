@@ -27,9 +27,16 @@ const Register = (props) => {
 
   const onClickButton = () => {
     const obj = { name: "", email: "", password: "", confirmPassword: "" };
-    if (inputs.name && validateEmail(inputs.email) && validatePassword(inputs.password) && inputs.password === inputs.confirmPassword) {
+    if (
+      inputs.name &&
+      validateEmail(inputs.email) &&
+      validatePassword(inputs.password) &&
+      inputs.password === inputs.confirmPassword
+    ) {
       setErrors(obj);
-      alert(`Name: ${inputs.name}\nEmail: ${inputs.email}\nPassword: ${inputs.password}`);
+      alert(
+        `Name: ${inputs.name}\nEmail: ${inputs.email}\nPassword: ${inputs.password}`
+      );
     } else {
       switch (false) {
         case !!inputs.name:
@@ -39,7 +46,10 @@ const Register = (props) => {
           setErrors({ ...obj, email: "Please enter a valid email address." });
           break;
         case validatePassword(inputs.password):
-          setErrors({ ...obj, password: "Your password must be at least 8 characters" });
+          setErrors({
+            ...obj,
+            password: "Your password must be at least 8 characters",
+          });
           break;
         case inputs.password === inputs.confirmPassword:
           setErrors({ ...obj, confirmPassword: "Passwords don't match" });
