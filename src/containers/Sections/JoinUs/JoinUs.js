@@ -11,21 +11,38 @@ class JoinUs extends Component {
   constructor() {
     super();
     this.state = {
-      output: [],
       sliderGrup: [],
     };
+    this.carateNewArray = this.carateNewArray.bind(this);
   }
 
-  render() {
+  carateNewArray() {
+    let sliderItem = [],
+        sliderGrup = [];
+
     sliderData.forEach((el, index) => {
-      this.state.sliderGrup.push(el);
+      sliderItem.push(el);
 
       if (index % 2 === 1) {
-        this.state.output.push(this.state.sliderGrup);
-        this.state.sliderGrup = [];
+        sliderGrup.push(sliderItem);
+        sliderItem = [];
       }
     });
 
+    this.setState({
+      sliderGrup: sliderGrup,
+    });
+  }
+
+  componentDidMount() {
+    this.carateNewArray();
+  }
+
+  componentWillUnmount() {
+    this.carateNewArray();
+  }
+
+  render() {
     return (
       <section className="section-joinus">
         <div className="container">
@@ -34,7 +51,8 @@ class JoinUs extends Component {
               <div className="joinus-info">
                 <h2 className="joinus-info-title">Join to Happy Customers</h2>
                 <p className="joinus-info-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates deserunt facere placeat est animi, sunt?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptates deserunt facere placeat est animi, sunt?
                 </p>
                 <Button className={"btn-joinus-custmer"}>Join Us Now</Button>
               </div>
@@ -54,12 +72,26 @@ class JoinUs extends Component {
               </div>
             </div>
             <div className="joinus-content-item">
-              <Carousel showArrows={false} showThumbs={false} showStatus={false} autoPlay={true} swipeable={true} infiniteLoop={true}>
-                {this.state.output.map((elemet, index) => {
+              <Carousel
+                showArrows={false}
+                showThumbs={false}
+                showStatus={false}
+                autoPlay={true}
+                swipeable={true}
+                infiniteLoop={true}
+              >
+                {this.state.sliderGrup.map((elemet, index) => {
                   return (
                     <div className="joinus-slider-item" key={index}>
                       {elemet.map((el) => {
-                        return <SliderBox key={el.id} img={el.img} title={el.title} description={el.description} />;
+                        return (
+                          <SliderBox
+                            key={el.id}
+                            img={el.img}
+                            title={el.title}
+                            description={el.description}
+                          />
+                        );
                       })}
                     </div>
                   );

@@ -30,6 +30,8 @@ const Modal = ({ children, onClose }) => {
     };
   }, [onClose]);
 
+
+
   return createPortal(<ContentModal onClose={onClose}>{children}</ContentModal>, el);
 };
 
