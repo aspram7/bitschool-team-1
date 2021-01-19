@@ -10,7 +10,7 @@ export const neddHellpData = [
       alt: "1.jpg",
     },
     title: "Hire a Pet Sitter",
-    description: "795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107",
+    description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
     url: "#",
   },
   {
@@ -20,7 +20,7 @@ export const neddHellpData = [
       alt: "2.jpg",
     },
     title: "Report a Stray Dog",
-    description: "call us <br> +1-111-222-333",
+    description: "call us +1-111-222-333",
     url: "#",
   },
   {
@@ -30,7 +30,7 @@ export const neddHellpData = [
       alt: "3.jpg",
     },
     title: "Hire a Pet Sitter",
-    description: "Email us <br> info@canvas.com",
+    description: "Email us info@canvas.com",
     url: "#",
   },
 ];
