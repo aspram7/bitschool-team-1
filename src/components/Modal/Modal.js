@@ -28,7 +28,7 @@ const Modal = ({ children, onClose }) => {
       window.removeEventListener("click", f, true);
       document.body.style.overflow = "unset";
     };
-  }, [modalRoot, el]);
+  });
 
   return createPortal(
     <ContentModal onClose={onClose}>{children}</ContentModal>,

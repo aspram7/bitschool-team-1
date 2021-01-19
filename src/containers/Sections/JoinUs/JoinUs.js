@@ -18,7 +18,7 @@ class JoinUs extends Component {
 
   carateNewArray() {
     let sliderItem = [],
-      sliderGrup = [];
+        sliderGrup = [];
 
     sliderData.forEach((el, index) => {
       sliderItem.push(el);
@@ -32,10 +32,13 @@ class JoinUs extends Component {
     this.setState({
       sliderGrup: sliderGrup,
     });
-    
   }
 
   componentDidMount() {
+    this.carateNewArray();
+  }
+
+  componentWillUnmount() {
     this.carateNewArray();
   }
 
