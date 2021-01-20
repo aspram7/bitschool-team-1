@@ -12,7 +12,7 @@ const FooterTop = () => {
           <div className="about-us">
             <div className="about-us-content">
               <p className="content-designe">
-                We belive in <b>Simple</b>, <b>Creative</b> & <b>Flexible </b>Designe Standarts.
+                We belive in <b>Simple</b>, <b>Creative</b> &amp; <b>Flexible </b>Designe Standarts.
               </p>
               <br />
               <div className="contacts">
