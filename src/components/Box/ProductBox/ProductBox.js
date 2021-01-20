@@ -8,13 +8,13 @@ const ProductBox = ({ img, title, price }) => {
   return (
     <div className="product-box">
       <div className="productBox-image">
-        <Link>
+        <Link href="#">
           <img src={img} alt={title} />
         </Link>
       </div>
       <div className="productBox-desc">
-        <Link className="productBox-product-name">
-          <h3>{title}</h3>
+        <Link href="#" className="productBox-product-name">
+          {title}
         </Link>
         <p>{price}</p>
       </div>
