@@ -15,8 +15,8 @@ const Products = () => {
         <div className="products-title">
           <h3>Our Products</h3>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur dolorum, voluptatum possimus temporibus
-            vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum
+            inventore consectetur dolorum, voluptatum possimus temporibus vel.
           </span>
         </div>
         <div className="products-content">
@@ -24,13 +24,19 @@ const Products = () => {
             <img src={dogImage} alt="Dog" />
           </div>
           <div className="product-list">
-            {productsData.map((el) => {
-              return (
-                <div className="product-list-padding" key={el.id}>
-                  <ProductBox img={el.img} title={el.title} price={el.price} />
-                </div>
-              );
-            })}
+            <div className="product-list-content">
+              {productsData.map((el) => {
+                return (
+                  <div className="product-list-item" key={el.id}>
+                    <ProductBox
+                      img={el.img}
+                      title={el.title}
+                      price={el.price}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

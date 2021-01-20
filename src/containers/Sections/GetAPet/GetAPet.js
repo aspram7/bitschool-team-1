@@ -14,7 +14,7 @@ const GetAPet = () => {
           <div className="get-a-pet-row">
             <p>want to adopt your a best friend?</p>
             <h3>Unconditional love is as close as your nearest Shelter.</h3>
-            <Button className="button-light">GET A PET NOW</Button>
+            <Button className="button-light get-a-pet-btn">GET A PET NOW</Button>
           </div>
         </div>
       </div>

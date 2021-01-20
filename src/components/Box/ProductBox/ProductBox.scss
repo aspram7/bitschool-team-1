@@ -7,8 +7,10 @@
   }
 
   .productBox-image {
+    max-width: 220px;
+    margin: auto;
     img {
-      width: 220px;
+      max-width: 100%;
       transition: all 200ms ease;
       overflow: hidden;
     }
@@ -17,15 +19,15 @@
   .productBox-desc {
     padding: 15px 0;
     text-align: center;
-    margin-bottom: 7px;
 
     .productBox-product-name {
       color: rgb(41, 41, 41);
-      font-size: 20px;
-      margin: 0 0 20px;
+      font-size: 18px;
+      margin: 0 0 10px;
       font-weight: 600;
       transition: 0.3s;
-      line-height: 1.5;
+      line-height: 28px;
+      display: block;
 
       :hover {
         color: #f0a540 !important;
@@ -34,47 +36,22 @@
 
     p {
       color: #f0a540;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
     }
   }
 }
 
-@media screen and(max-width: 1200px) {
+@media screen and(min-width: 576px) {
   .product-box {
-    .productBox-image {
-      img {
-        width: 160px;
+    .productBox-desc {
+      .productBox-product-name {
+        font-size: 20px;
+        line-height: 30px;
       }
-    }
-  }
-}
-
-@media screen and(max-width: 992px) {
-  .product-box {
-    .productBox-image {
-      img {
-        width: 220px;
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 768px) {
-  .product-box {
-    .productBox-image {
-      img {
-        width: 240px;
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 576px) {
-  .product-box {
-    .productBox-image {
-      img {
-        width: 100%;
+  
+      p {
+        font-size: 18px;
       }
     }
   }
