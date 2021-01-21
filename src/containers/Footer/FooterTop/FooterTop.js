@@ -1,7 +1,7 @@
 import React from "react";
 
 import Link from "../../../components/Link/Link";
-
+import { footerData } from "../../../data-mockup/footer-mockup";
 import "./FooterTop.scss";
 
 const FooterTop = () => {
@@ -43,89 +43,29 @@ const FooterTop = () => {
               </div>
             </div>
           </div>
-          <div className="footer-top-item blogroll">
-            <div className="blogroll-content">
-              <h4 className="footer-top-item-hedline">BLOGROLL</h4>
-              <ul className="footer-top-item-list">
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Documentation</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">
-                    Feedback
-                  </Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Plugins</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">
-                    Support Forums
-                  </Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Themes</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Canvas Blog</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">
-                    Canvas Planet
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-top-item blogroll-new">
-            <div className="blogroll-new-content">
-              <h4 className="footer-top-item-hedline">BLOGROLL</h4>
-              <ul className="footer-top-item-list">
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Documentation</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">
-                    Feedback
-                  </Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Plugins</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">
-                    Support Forums
-                  </Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Themes</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">Canvas Blog</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="#">
-                    Canvas Planet
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-top-item sales">
+          {footerData.map((column) => {
+            return (
+              <div
+                className={`footer-top-item item-${column.id}`}
+                key={column.id}
+              >
+                <div className="blogroll-content">
+                  <h4 className="footer-top-item-hedline">{column.title}</h4>
+                  <ul className="footer-top-item-list">
+                    {column.content.map((item) => {
+                      return (
+                        <li key={item.id}>
+                          <i className="icon-angle-right"></i>
+                          <Link href={item.url}>{item.title}</Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
+         <div className="footer-top-item sales">
             <div className="sales-content">
               <h3>
                 Exclusive sales
