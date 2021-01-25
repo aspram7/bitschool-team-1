@@ -29,9 +29,15 @@ const Login = (props) => {
       alert(`Email: ${inputs.email}\nPassword: ${inputs.password}`);
     } else {
       if (!validateEmail(inputs.email)) {
-        setErrors({ email: "Please enter a valid email address.", password: "" });
+        setErrors({
+          email: "Please enter a valid email address.",
+          password: "",
+        });
       } else if (!validatePassword(inputs.password)) {
-        setErrors({ email: "", password: "Your password must be at least 8 characters" });
+        setErrors({
+          email: "",
+          password: "Your password must be at least 8 characters",
+        });
       }
     }
   };

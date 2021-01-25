@@ -1,19 +1,19 @@
 import React from "react";
 
 import Link from "../../../components/Link/Link";
-
+import { footerData } from "../../../data-mockup/footer-mockup";
 import "./FooterTop.scss";
 
 const FooterTop = () => {
   return (
     <div className="footer-top">
       <div className="container">
-        <div className="footer-top-content">
-          <div className="about-us">
+        <div className="footer-top-items">
+          <div className="footer-top-item about-us">
             <div className="about-us-content">
               <p className="content-designe">
-                We belive in <b>Simple</b>, <b>Creative</b> &
-                <br /> <b>Flexible </b>Designe Standarts.
+                We belive in <b>Simple</b>, <b>Creative</b> &amp;{" "}
+                <b>Flexible </b>Designe Standarts.
               </p>
               <br />
               <div className="contacts">
@@ -43,77 +43,29 @@ const FooterTop = () => {
               </div>
             </div>
           </div>
-          <div className="blogroll">
-            <div className="blogroll-content">
-              <h4>BLOGROLL</h4>
-              <ul>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://codex.wordpress.org/">Documentation</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/forum/requests-and-feedback/">Feedback</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/plugins/">Plugins</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/">Support Forums</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/themes/">Themes</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/news/">Canvas Blog</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://planet.wordpress.org/">Canvas Planet</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="blogroll-new">
-            <div className="blogroll-new-content">
-              <h4>BLOGROLL</h4>
-              <ul>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://codex.wordpress.org/">Documentation</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/forum/requests-and-feedback/">Feedback</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/plugins/">Plugins</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/support/">Support Forums</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/themes/">Themes</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://wordpress.org/news/">Canvas Blog</Link>
-                </li>
-                <li>
-                  <i className="icon-angle-right"></i>
-                  <Link href="https://planet.wordpress.org/">Canvas Planet</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="sales">
+          {footerData.map((column) => {
+            return (
+              <div
+                className={`footer-top-item item-${column.id}`}
+                key={column.id}
+              >
+                <div className="blogroll-content">
+                  <h4 className="footer-top-item-hedline">{column.title}</h4>
+                  <ul className="footer-top-item-list">
+                    {column.content.map((item) => {
+                      return (
+                        <li key={item.id}>
+                          <i className="icon-angle-right"></i>
+                          <Link href={item.url}>{item.title}</Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
+         <div className="footer-top-item sales">
             <div className="sales-content">
               <h3>
                 Exclusive sales

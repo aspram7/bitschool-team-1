@@ -12,44 +12,49 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-direction: column;
 
       .reserver-by {
         color: rgba(255, 255, 255, 0.4);
         font-size: 14px;
+        padding-bottom: 30px;
       }
       .our-online-pages {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -5px 0 0 -5px;
+
+        .our-online-pages-item{
+          padding: 5px 0 0 5px;
+        }
+
         .social-icon {
           color: rgba(255, 255, 255, 0.5);
           width: 32px;
           height: 32px;
           overflow: hidden;
-
-          margin: 0 5px 5px 0;
-          display: inline-block !important;
           background-color: transparent;
-          line-height: 30px !important;
+          line-height: 30px;
           text-align: center;
+          display: block;
 
           &:hover :first-child {
-            margin-top: -35px;
+            margin-top: -32px;
           }
-          &:hover :last-child {
-            margin-top: 5px;
-          }
-
-          :last-child {
-            color: #fff !important;
-            margin-top: 5px;
+  
+          &:last-child {
+            color: #fff ;
           }
 
           i {
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
             display: block;
             position: relative;
             transition: all 0.3s ease;
             font-size: 14px;
-            line-height: 27px !important;
+            line-height: 27px ;
             border-radius: 3px;
             padding: 3px;
           }
@@ -58,58 +63,71 @@
         .si-facebook {
           i {
             &:last-child {
-              background-color: #3b5998 !important;
+              background-color: #3b5998 ;
             }
           }
         }
         .si-twitter {
           i {
             &:last-child {
-              background-color: #00acee !important;
+              background-color: #00acee ;
             }
           }
         }
         .si-gplus {
           i {
             &:last-child {
-              background-color: #dd4b39 !important;
+              background-color: #dd4b39 ;
             }
           }
         }
         .si-pinterest {
           i {
             &:last-child {
-              background-color: #c8232c !important;
+              background-color: #c8232c;
             }
           }
         }
         .si-vimeo {
           i {
             &:last-child {
-              background-color: #86c9ef !important;
+              background-color: #86c9ef ;
             }
           }
         }
         .si-github {
           i {
             &:last-child {
-              background-color: #171515 !important;
+              background-color: #171515;
             }
           }
         }
         .si-yahoo {
           i {
             &:last-child {
-              background-color: #720e9e !important;
+              background-color: #720e9e ;
             }
           }
         }
         .si-linkedin {
           i {
             &:last-child {
-              background-color: #0e76a8 !important;
+              background-color: #0e76a8;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 992px) {
+  .footer-bottom {
+    .container {
+      .footer-bottom-content {
+        flex-direction: row;
+        .reserver-by {
+          padding-bottom: 0;
         }
       }
     }
